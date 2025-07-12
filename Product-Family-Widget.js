@@ -468,7 +468,7 @@ class FamilyDetail extends HTMLElement {
 
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "styles/Product-Family-Detail-Widget.css");
+    link.setAttribute("href", "Product-Family-Detail-Widget.css");
 
     const owlStyle1 = document.createElement("link");
     owlStyle1.rel = "stylesheet";
