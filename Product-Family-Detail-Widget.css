@@ -1,0 +1,670 @@
+
+/* General Image Container Layout */
+
+  /* Owl Carousel thumbnail item box */
+.owl-carousel .owl-stage {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: auto !important;
+ 
+}
+
+.owl-carousel .owl-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  display: inline-block;
+}
+
+.owl-carousel .item {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* remove if you don't need borders */
+  box-shadow: none; /* remove shadows */
+  background: transparent;
+}
+
+.owl-carousel .item img {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.image-box.large-box {
+  width: 300px; /* or your preferred size */
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px; /* square with slightly rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+/* Box Around Each Image (Thumbnail Card Style) */
+.image-box {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+
+/* --- Fix spacing between Owl Carousel items --- */
+.owl-carousel .owl-stage {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+   width: auto !important;
+} 
+
+.owl-carousel .owl-item {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+
+}
+
+/* Dot Navigation (Owl Carousel Style) */
+.owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.owl-dot.active {
+  background-color: #5b7764;
+}
+
+/* Optional: Card Image Style */
+.card-img-top {
+  width: 100%;
+  display: block;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  text-align: left;
+}
+/* Prevent internal spacing */
+
+
+/* Product Image Style for Large Image Display (Optional) */
+#productImage {
+  width: 100%;
+  height: 300px;
+  object-fit: contain; /* keep aspect ratio without cropping */
+  border-radius: 0; /* remove circular crop */
+}
+#imageGallery{
+  width: auto !important;
+}
+
+/* Product Link Block (if used elsewhere) */
+.productLink {
+  text-align: left;
+  display: block;
+}
+
+/* Product Title */
+#productNameDisplay {
+  /* font-family: "Roboto", sans-serif; */
+   font-family: 'Montserrat';
+  /* font-size: 30px; */
+  /* font-weight: 500; */
+  color: rgb(38, 38, 41);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Benefits Section and Table Styling (if needed) */
+
+h4 {
+  font-size: 16px;
+  /* font-family: Roboto, sans-serif; */
+   font-family: 'Montserrat';
+  color:#495057;
+  color:#444;
+}
+#benefitsGrid {
+  display: flex;
+  flex-direction: column;
+}
+.benefit-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.benefit-row div {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  /* font-family: Roboto Serif, sans-serif; */
+   font-family: 'Montserrat';
+  /* color: #1D1D1D; */
+  color:#444;
+  font-size: 14px;
+}
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+td {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  /* font-family: Roboto, sans-serif; */
+   font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #263E9621;
+  text-transform: uppercase;
+  border: 1px solid #ddd;
+  color: #1D1D1D;
+}
+td:first-child {
+  /* font-family: Roboto, sans-serif; */
+   font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #263E96;
+  /* background-color: #246; */
+  color: white;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  td:first-child {
+    font-size: 14px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  td:first-child {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+/* test parvez */
+
+
+
+.benefit{
+  border-radius: 5px;
+
+
+}
+
+
+
+.product-page {
+  max-width: 1600px;
+  /* margin: 20px 10px;; */
+  /* padding: 20px; */
+  /* font-family: Arial, sans-serif; */
+   font-family: 'Montserrat';
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  border-bottom:1px solid #ddd;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  /* flex: 1 1 40%; */
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.image-box.large-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+#imageGallery {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 100px;
+  background: #f5f5f5;
+}
+
+.rightColumn {
+  /* flex: 1 1 55%; */
+    flex: 1 1 48%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#productNameDisplay {
+  font-size: 24px;
+    font-weight: 500;
+    Margin: 0px 0px 5px 0px;
+    font-weight: normal;
+}
+
+#benefitsSection {
+  /* background-color: #ccc; */
+  padding: 10px;
+  background: #f8f9fa;
+      border-radius: 5px;
+  
+}
+#benefitsSection h4{
+  font-weight: 300!important;
+  margin: 2px;
+  padding:2px;
+}
+#benefitsGrid {
+  margin-top: 10px;
+}
+
+.benefit-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.benefit {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 6px;
+  margin: 0 4px;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+}
+
+/* table td {
+  padding: 10px;
+  border: 1px solid #000;
+} */
+
+/* end of test parvez */
+
+            
+/* carousel style */
+
+
+  .carousel-container {
+      /* width: 600px; */
+      /* height: 300px; */
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      /* margin-bottom: 20px; */
+    } 
+     .carousel-container {
+  width: 100%;
+  max-width: 800px;
+  /* height: 360px; */
+  /* margin: auto; */
+  overflow: hidden;
+}
+
+
+   .carousel-slide {
+  display: flex;
+  width: 100%;
+    height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+    /* .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 1;
+    } */
+    .nav-btn{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #495057;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%; /* Adjust if too big/small */
+  cursor: pointer;
+  z-index: 1;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+}
+
+.prev-btn {
+  left: 10px;
+  background-image: url('https://www.marblesystems.com/wp-content/themes/marblesystems/dist/icon-chevron-left.svg');
+}
+
+.next-btn {
+      background-image: url('https://www.marblesystems.com/wp-content/themes/marblesystems/dist/icon-chevron-right.svg');
+      right: 10px;
+    }
+
+    /* .nav-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+    } */
+     .nav-btn:hover {
+  transform: translateY(-50%) scale(1.15); /* 15% larger */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a nice hover shadow */
+}
+
+    .thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnails img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .thumbnails img.active {
+      /* border: 2px solid #007bff; */
+      /* border: 2px solid #6c757d; */
+      border: 2px solid #263E96;
+    }
+
+  body {
+       font-family: 'Montserrat';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    .carousel-slide{
+       transition: transform 2s ease;
+    }
+/* carsousel style end */
+
+
+.container{
+  max-width: 1600px!important;
+  margin: 0px;
+  padding: 0px;
+}
+h3{
+  font-size: 24px!important;
+}
+#ProductLocationName{
+  font-family: 'Montserrat' !important;
+
+}
+.benefit-row div{
+  font-size: 14px;
+    padding: 10px 10px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .benefit-row div {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .benefit-row div {
+    font-size: 10px;
+  }
+}
+spswc-select{
+  font-family: 'Montserrat'!important;
+}
+:root {
+  --primary-font: 'Montserrat';
+}
+
+
+
+/* Base layout for product page */
+.product-page {
+ 
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Use flexbox for side-by-side layout */
+
+/* Left column with image carousel */
+/* .left-column {
+  flex: 1 1 50%;
+  min-width: 300px;
+  box-sizing: border-box;
+} */
+
+/* Right column with product info */
+/* .rightColumn {
+  flex: 1 1 40%;
+  min-width: 300px;
+  box-sizing: border-box;
+} */
+@media (max-width: 650px) {
+  .left-column, .rightColumn {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+/* Carousel container */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.thumbnails img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+.thumbnails img.active {
+  /* border-color: #007bff; */
+  border-color: #263E96;;
+}
+
+/* Benefits grid */
+/* #benefitsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+.benefit-row {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 100%;
+}
+
+#benefitsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.benefit {
+  flex: 1 1 30%;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .benefit {
+    flex: 1 1 calc(50% - 10px);
+    font-size: 12px;
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 480px) {
+  .benefit {
+    flex: 1 1 100%;
+    font-size: 11px;
+  }
+}
+
+/* Responsive for tablets and phones */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+  }
+  .left-column, .rightColumn {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .benefit {
+    flex: 1 1 45%;
+  }
+  .nav-btn {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefit {
+    flex: 1 1 100%;
+  }
+  .thumbnails img {
+    width: 48px;
+  }
+}

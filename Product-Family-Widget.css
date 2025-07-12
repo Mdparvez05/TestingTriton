@@ -1,0 +1,297 @@
+
+         body {
+            /* font-family: Roboto, sans-serif; */
+             font-family: 'Montserrat';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+       h2 {
+          /* font-family: Roboto Serif ; */
+           font-family: 'Montserrat';
+          font-size: 18px;         
+          }
+    .count-display {
+        font-size: 18px;
+       
+        font-weight: 400;          /* Normal weight */
+        color: #1D1D1D,!important; 
+    
+      }
+          /* .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 30px;
+          } */
+          .filters {
+            width:20%;
+            /* width: 250px; */
+            padding: 20px;
+            /* min-width: 250px;  */
+            /* max-width: 250px; */
+            border: 1px  #ddd;
+            background-color: #f9f9f9;
+           position: fixed; /* Keep position fixed */
+            top: 20px; /* Adjust this value to position the filters */
+            left: 100px; /* Keep the left position */
+            height: calc(100vh - 40px); /* Make the height dynamic to fit the viewport */
+            overflow-y: auto; /* Allow scrolling if content exceeds the height */
+          }
+          .filter {
+            margin-bottom: 30px;
+          }
+          .filter label {
+                font-family: 'Montserrat';
+                position: relative;
+                font-weight: 600;
+                padding-right: 35px;
+                display: flex;
+                align-items: center;
+                /* font-family: 'Roboto', sans-serif; */
+                font-size: 21px;
+                text-transform: uppercase;
+                color: #000;
+                cursor: pointer;
+                font-style: normal;
+              }
+
+            .filter .arrow {
+            margin-left: 10px;
+            transition: transform 0.3s;
+            font-size: 30px; /* Increase the font size */
+            display: inline-block;
+            }
+
+
+
+          .filter-content {
+            display: none;
+            margin-top: 5px;
+          }
+          .filter-content.show {
+            display: block;
+          }
+          .items-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            /* width: 120%; */
+            width: 100%;
+          }
+
+
+
+
+
+
+
+
+          .filter input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+          }
+          .inventory {
+            flex-grow: 1;
+            /* margin-left: 200px;  */
+            margin-left: 280px; /* Adjust margin to account for the width of the filters and some spacing */
+            margin-left:28rem;
+          
+            margin-top: 20px; /* Add margin to separate from the top */
+          }
+
+
+
+        
+
+
+          .item {
+              border-style: solid;
+              padding: 15px 15px 15px 15px;
+              background-color: fff;
+              border-width: 1px 1px 1px 1px;
+              border-color: #ECECEC;
+          }
+          
+         .item img {
+          width: 100%;
+          min-height: 250px;
+          height: 100%;
+          object-fit: cover;
+          display: block;         
+          margin: 0;             
+          padding: 0;
+          }
+
+        .item-title {
+          font-family: 'Montserrat';
+          font-size: 16px;
+          color: #000000;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          padding: 0;             
+          margin-top: 6px;              
+          line-height: 18px;
+          font-weight: 700;
+          font-style: normal;
+          }
+
+          .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+          }
+          .filter-option input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+          }
+          .filter-option label {font-family: 'Montserrat';
+            font-weight: normal;
+            margin-top: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            /* font-family: Roboto serif; */
+            text-transform: none;
+          }
+          .item a {
+            text-decoration: none;
+            color: inherit;
+          }
+            .inventory-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+          }
+          .inventory-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+          }
+          .pagination {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          .empty-image-container {
+                      width: 70%;
+                      height: 250px;
+                      object-fit: cover;
+                      margin-bottom: 10px;
+          }
+          #ProductLocationName{
+            font-family: 'Montserrat';
+          }
+/* ✅ Large screens (≥1200px): 4 columns */
+@media (min-width: 1200px) {
+  .items-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+ 
+}
+
+/* ✅ Medium screens (≥992px and <1200px): 3 columns */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inventory{
+    margin-left:20rem!important;
+  }
+}
+
+/* ✅ Small tablets (≥768px and <992px): 2 columns */
+@media (min-width: 768px) and (max-width: 991px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inventory{
+    margin-left: 14rem;
+  }
+}
+@media (max-width: 768px) {
+  .filters {
+    position: static; /* ❗ removes fixed */
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
+
+  .inventory {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .items-container {
+    grid-template-columns: repeat(1, 1fr); /* 2 cards per row on small screens */
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .inventory {
+    margin-left: 22rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
