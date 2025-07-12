@@ -37,7 +37,7 @@ class Family extends HTMLElement {
 
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "styles/Product-Family-Widget.css?v=1");
+    link.setAttribute("href", "Product-Family-Widget.css?v=1");
     // 2. Internal CSS styles
     const style = document.createElement("style");
     style.textContent = `
